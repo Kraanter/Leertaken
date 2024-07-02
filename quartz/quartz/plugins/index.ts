@@ -40,9 +40,15 @@ export function getStaticResourcesFromPlugins(ctx: BuildCtx) {
       src: "https://cdn.jsdelivr.net/gh/windesheim-hbo-ict/deeltaken@latest/CodeBlock/codeBlock.js",
       moduleType: "module",
     })
-  }
 
-  return staticResources
+    staticResources.js.push({
+      loadTime: "afterDOMReady",
+      contentType: "external",
+      src: "https://cdn.jsdelivr.net/gh/kraanter/aftekenen-prototype@0.0.2/webcomp/aftekenen.js",
+    })
+
+    return staticResources
+  }
 }
 
 export * from "./emitters"
