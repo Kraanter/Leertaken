@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME:  windesheim-hbo-ict/leertaken
+  IMAGE_NAME:  kraanter/leertaken
 
 jobs:
   build-and-push-leertaken:
